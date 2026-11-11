@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-import load_previous  # Disponibiliza os módulos das etapas anteriores.
-
 import enum
 from collections.abc import Iterable
 from dataclasses import dataclass
@@ -29,8 +27,6 @@ class SemanticErrorKind(enum.Enum):
     ARGUMENT_TYPE_MISMATCH = "argument_type_mismatch"
     VOID_VALUE_USED = "void_value_used"
     RETURN_MISMATCH = "return_mismatch"
-    UNINITIALIZED_READ = "uninitialized_read"
-    MISSING_RETURN = "missing_return"
 
 
 @dataclass(frozen=True, slots=True)

@@ -45,4 +45,4 @@ class FlowAnalyzer:
 
 
 def check_flow(program: Program) -> None:
-    FlowAnalyzer().analyze(program)
+    pass
